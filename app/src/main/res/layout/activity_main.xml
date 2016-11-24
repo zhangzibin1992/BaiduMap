@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.baidumap.ui.MainActivity">
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/baidumap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true">
+    </com.baidu.mapapi.map.MapView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button android:id="@+id/btn_putong"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:onClick="onClick"
+           android:text="普通地图"/>
+
+       <Button android:id="@+id/btn_weixing"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:onClick="onClick"
+           android:text="卫星地图"/>
+   </LinearLayout>
+
+</LinearLayout>
